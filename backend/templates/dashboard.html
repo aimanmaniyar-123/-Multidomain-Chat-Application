@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <h2>🚀 Admin Dashboard</h2>
+
+    <h3>Feature Toggles</h3>
+    <ul>
+        {% for feature, enabled in features.items() %}
+            <li>{{ feature }}:
+                <form method="post" action="/admin/feature-toggles/{{ feature }}/{{ 'false' if enabled else 'true' }}">
+                    <button type="submit">{{ 'Disable' if enabled else 'Enable' }}</button>
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <h3>📊 Feedbacks</h3>
+    <ul>
+        {% for fb in feedbacks %}
+            <li>
+                <strong>Session ID:</strong> {{ fb['session_id'] }}<br>
+                <strong>Prompt:</strong> {{ fb['prompt'] }}<br>
+                <strong>Response:</strong> {{ fb['response'] }}<br>
+                <strong>Rating:</strong> {{ fb['rating'] }}<br>
+                <strong>Comment:</strong> {{ fb['comment'] }}
+            </li>
+            <hr>
+        {% endfor %}
+    </ul>
+
+    <h3>🧠 Recent Chats</h3>
+    <ul>
+        {% for chat in chat_logs %}
+            <li>
+                <strong>{{ chat['timestamp'] }}</strong><br>
+                <strong>Session ID:</strong> {{ chat['session_id'] }}<br>
+                <strong>Prompt:</strong> {{ chat['prompt'] }}<br>
+                <strong>Response:</strong> {{ chat['response'] }}
+            </li>
+            <hr>
+        {% endfor %}
+    </ul>
+</body>
+</html>
