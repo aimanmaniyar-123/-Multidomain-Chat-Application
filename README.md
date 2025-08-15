@@ -35,15 +35,15 @@ Development of an intelligent chat application with multi-domain categorization,
 git clone https://github.com/aimanmaniyar-123/-Multidomain-Chat-Application
 cd -Multidomain-Chat-Application
 
-2️⃣ Create Virtual Environment
+### 2️⃣ Create Virtual Environment
 python -m venv venv
 source venv/bin/activate   # Mac/Linux
 venv\Scripts\activate      # Windows
 
-3️⃣ Install Dependencies
+### 3️⃣ Install Dependencies
 pip install -r requirements.txt
 
-4️⃣ Setup Environment Variables
+### 4️⃣ Setup Environment Variables
 
 Copy .env.example to .env and update API keys:
 
@@ -58,14 +58,13 @@ Start Chainlit Frontend
 cd chainlit
 chainlit run app.py -w
 
-### License
+## License
 MIT license
 
-### Contributing
+## Contributing
 Pull requests are welcome
 
-### Author
+## Author
 Aiman Maniyar
 
-📂 Folder Structure
 
