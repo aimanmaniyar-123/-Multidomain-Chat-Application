@@ -58,13 +58,13 @@ Start Chainlit Frontend
 cd chainlit
 chainlit run app.py -w
 
-## License
+License
 MIT license
 
-## Contributing
+Contributing
 Pull requests are welcome
 
-## Author
+Author
 Aiman Maniyar
 
 
