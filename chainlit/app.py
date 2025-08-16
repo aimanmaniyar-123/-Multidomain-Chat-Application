@@ -9,8 +9,12 @@ import chainlit as cl
 # Add backend path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from backend.memory import store_message
+load_dotenv()
 
-API_BASE = "http://localhost:8000"
+# Backend URL from environment
+BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
+
+#API_BASE = "http://localhost:8000"
 
 # Categories for sidebar
 CATEGORIES = [
