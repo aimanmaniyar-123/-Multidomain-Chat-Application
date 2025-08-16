@@ -15,7 +15,7 @@ load_dotenv()
 # Backend URL from environment
 BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
 
-#API_BASE = "http://localhost:8000"
+API_BASE = "http://localhost:8000"
 
 # Categories for sidebar
 CATEGORIES = [
