@@ -6,4 +6,4 @@ uvicorn backend.main:app --host 0.0.0.0 --port 8000 &
 sleep 10
 
 # Start Chainlit on Render's assigned port
-chainlit run chainlit_app/app.py --host 0.0.0.0 --port $PORT
+chainlit run chainlit/app.py --host 0.0.0.0 --port $PORT
