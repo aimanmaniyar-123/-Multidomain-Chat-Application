@@ -5,6 +5,7 @@ import httpx
 import mimetypes
 from datetime import datetime
 import chainlit as cl
+from dotenv import load_dotenv
 
 # Add backend path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
