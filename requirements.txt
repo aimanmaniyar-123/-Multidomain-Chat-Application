@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+sqlalchemy
+httpx
+python-dotenv
+openai
+chainlit
+requests
+pytesseract
+groq
+pdfminer.six
+
+
