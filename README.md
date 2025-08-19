@@ -58,6 +58,7 @@ Start Chainlit Frontend
 cd chainlit
 chainlit run app.py -w
 
+Demo video: https://www.loom.com/share/e373b238fa3f4c749f78643eeea05dd9?sid=0268934e-7d76-4a9f-838b-29e1dedec50e
 License
 MIT license
 
